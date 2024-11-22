@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.primary {
+  background-color: #2563EB;
+  padding: 0.75rem 1.5rem;
+ 
+  &[type="submit"] {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  &:hover {
+    background-color: #1D4ED8;
+  }
+}
+.secondary {
+  background-color: #2563EB33;
+  border: solid 2px #2563EB;
+
+  &:hover {
+    background-color: #1D4ED866;
+  }
+}
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}

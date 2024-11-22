@@ -1,0 +1,35 @@
+.explore__grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  padding: 1.2rem;
+  border-radius: 20px;
+  background: transparent;
+  transition: all 0.3s;
+  &:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.89%, #2563eb 113.06%), linear-gradient(0deg, #07112A, #07112A);
+  }
+
+  &--title {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+  }
+  &--text {
+    margin: 0;
+  }
+  &--icon {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

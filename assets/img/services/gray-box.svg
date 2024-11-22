@@ -1,0 +1,8 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M81 60.9999L41 40.9999L1 60.9999L41 80.9999L81 60.9999Z" fill="#2E2E2E" stroke="#E6E8EC" stroke-miterlimit="1"/>
+<path d="M81 61L41 41V1L81 21V61Z" fill="#5C5C5C" stroke="#E6E8EC" stroke-miterlimit="1"/>
+<path d="M41 41L1 61V21L41 1V41Z" fill="#5C5C5C" stroke="#E6E8EC" stroke-miterlimit="1"/>
+<path d="M41 81L1 61V21L41 41V81Z" fill="#7A7A7A" stroke="#E6E8EC" stroke-miterlimit="1"/>
+<path d="M41 81L81 61V21L41 41V81Z" fill="#7A7A7A" stroke="#E6E8EC" stroke-miterlimit="1"/>
+<path d="M81 21L41 1L1 21L41 41L81 21Z" fill="#999999" stroke="#E6E8EC" stroke-miterlimit="1"/>
+</svg>

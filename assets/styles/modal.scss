@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  gap: 20px;
+
+  & h3,
+  & p {
+    margin: 0;
+  }
+  & h3 {
+    color: #27303A;
+  }
+  & p {
+    color: #334663;
+  }
+
+  &__text-container--top {
+    margin-bottom: 20px;
+  }
+}
+
+.modal-success {
+  border: 2px solid #48C1B5;
+  background-color: #F6FFF9;
+}
+.modal-error {
+  border: 2px solid #F4B0A1;
+  background-color: #FFF5F3;
+}

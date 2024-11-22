@@ -1,0 +1,22 @@
+.arrow_button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: #EFF6FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  & svg {
+    fill: #000718;
+  }
+
+  &:hover {
+    background-color: #2563EB;
+  }
+  &:hover svg {
+    fill: #FFF;
+  }
+}

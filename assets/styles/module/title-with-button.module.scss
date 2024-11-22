@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: all 0.5s;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+}
+.text_container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & h2,
+  & p {
+    margin: 0;
+  }
+  & h2 {
+    font-size: 3rem;
+    line-height: 60px;
+    font-family: "Prompt", sans-serif;
+    color: #FFF;
+  }
+}

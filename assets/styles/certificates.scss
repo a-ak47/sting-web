@@ -1,0 +1,27 @@
+.certificates {
+  &__slider {
+    position: relative;
+    margin-top: 50px;
+  }
+}
+
+.arrow-button-right,
+.arrow-button-left {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 10;
+}
+
+.arrow-button-left {
+  left: 0;
+}
+.arrow-button-right {
+  right: -60px;
+}
+
+.mobile-arrow {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

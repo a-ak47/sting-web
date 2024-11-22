@@ -1,0 +1,152 @@
+.about-us {
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+  }
+
+  &__second-sec {
+    &--text-container {
+      width: 50%;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+    }
+    &--title {
+      width: 80%;
+    }
+    &--buttons-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
+      & a {
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+
+        & button {
+          @media (max-width: 600px) {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    &--img-container {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__mission {
+    margin-top: 100px;
+    &--text-container {
+      width: 40%;
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+    }
+    &--items-container {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+
+      @media (max-width: 1100px) {
+        margin-top: 10px;
+      }
+
+      & p,
+      & h3 {
+        margin: 0;
+      }
+      & h3 {
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 6px;
+      }
+    }
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    &--circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 1100px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &--button {
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+    &--mob-button {
+      display: none;
+      @media (max-width: 1100px) {
+        display: block;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+      & a {
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+      }
+      & button {
+        @media (max-width: 600px) {
+          width: 100%;
+          justify-content: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__experts {
+    padding: 100px 0;
+  }
+
+  &__bottom-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    & h2 {
+      text-align: center;
+    }
+  }
+}

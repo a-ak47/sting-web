@@ -1,0 +1,23 @@
+.grid_container {
+  display: grid;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.grid_columns_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid_columns_2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap_20 {
+  gap: 40px;
+  @media (max-width: 1100px) {
+    gap: 20px;
+  }
+}

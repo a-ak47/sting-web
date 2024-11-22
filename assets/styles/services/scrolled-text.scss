@@ -1,0 +1,61 @@
+.scrolled-text-line-container {
+  display: flex;
+  // align-items: center;
+  gap: 20px;
+  // overflow: hidden;
+}
+
+.scrolled-text {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding-bottom: 100px;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  // max-height: 400px;
+  scroll-behavior: smooth;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: start;
+    // opacity: 0.5;
+    opacity: 1;
+    &.active {
+      background-color: #f0f0f0;
+      opacity: 1;
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    &--step {
+      background-color: #2563eb;
+      padding: 2px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      & p {
+        margin: 0;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "Prompt", sans-serif;
+      }
+    }
+    &--title {
+      font-size: 1.3rem;
+      font-family: "Prompt", sans-serif;
+      color: #fff;
+      font-weight: 400;
+    }
+    &--text {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}

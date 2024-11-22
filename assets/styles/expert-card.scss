@@ -1,0 +1,41 @@
+.expert-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px 0;
+
+  &__expert-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &--name {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    &--position {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    
+    &--text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      & p {
+        margin: 0 ;
+        color: #FFF;
+      }
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+.expert-card-bg {
+  background-color: #07112A;
+  border-radius: 16px;
+  padding: 1rem;
+}

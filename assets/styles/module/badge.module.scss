@@ -1,0 +1,121 @@
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #000718;
+  position: relative;
+  border-radius: 20px;
+  padding: 100px 0;
+  margin: 100px 0;
+  overflow: hidden;
+
+  @media (max-width: 1100px) {
+    padding: 20px;
+  }
+
+  & h2 {
+    text-align: center;
+    max-width: 60%;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    text-align: center;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
+  }
+
+  &__buttons_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    & a {
+      @media (max-width: 600px) {
+        width: 90%;
+      }
+    }
+    & button {
+      @media (max-width: 600px) {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.circle_1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -31%);
+  animation: circle-1 10s linear infinite;
+}
+.circle_2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-9%, -31%);
+  animation: circle-2 10s linear infinite;
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: translate(-90%, -31%);
+  }
+  50% {
+    transform: translate(-9%, -31%);
+  }
+  70% {
+    transform: translate(-9%, -31%);
+  }
+  90% {
+    transform: translate(-90%, -31%);
+  }
+  100% {
+    transform: translate(-90%, -31%);
+  }
+}
+@keyframes circle-2 {
+  0% {
+    transform: translate(-9%, -31%);
+  }
+  50% {
+    transform: translate(-90%, -31%);
+  }
+  70% {
+    transform: translate(-90%, -31%);
+  }
+  90% {
+    transform: translate(-9%, -31%);
+  }
+  100% {
+    transform: translate(-9%, -31%);
+  }
+}
+
+.grid_img {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  scale: 1.8;
+}
